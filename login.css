@@ -1,0 +1,76 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+    background-color: var(--main-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+:root {
+    --main-color: #0d2b54;
+    --second-color: #9dd7fa;
+    --padding: 90px;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--second-color);
+}
+
+.login img {
+    width: 150px;
+    height: 150px;
+    left: 30%;
+    padding-top: 100p;
+    top: -30%;
+    position: absolute;
+}
+
+.login form {
+    padding: 10px;
+}
+
+.login form input::placeholder {
+    color: var(--main-color);
+}
+
+.login form .email {
+    margin-top: 15px;
+}
+
+.login form input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 350px;
+    background-color: var(--second-color);
+}
+
+.login form .sub {
+    width: 370px;
+    margin-top: 42px;
+    padding: 20px;
+    color: var(--main-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login p,
+a {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--second-color);
+    cursor: pointer;
+}

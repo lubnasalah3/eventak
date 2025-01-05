@@ -1,0 +1,78 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+    background-color: var(--main-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+:root {
+    --main-color: #0d2b54;
+    --second-color: #9dd7fa;
+    --padding: 90px;
+}
+
+.reg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--second-color);
+}
+
+.reg img {
+    width: 150px;
+    height: 150px;
+    left: 30%;
+    margin: 100px auto;
+    top: -30%;
+    position: absolute;
+}
+
+.reg form {
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.reg form .email {
+    margin-top: 15px;
+}
+
+.reg form input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 350px;
+    background-color: var(--second-color);
+}
+
+.reg form input::placeholder {
+    color: var(--main-color);
+}
+
+.reg form .sub {
+    width: 370px;
+    margin-top: 42px;
+    padding: 20px;
+    color: var(--main-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reg p {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.reg p a {
+    color: var(--second-color);
+}

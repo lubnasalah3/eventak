@@ -1,0 +1,117 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+    background-color: var(--main-color);
+}
+html{
+    scroll-behavior: smooth;
+}
+.parent{
+    background-color: #eee;
+}
+:root{
+    --main-color:#0d2b54;
+    --second-color:#9dd7fa;
+    --padding: 90px;
+}
+
+.container {
+    padding-left: 15px; 
+    padding-top: 10px;
+    padding-right: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 600px; */
+}
+ 
+/* Small Screens */
+
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+
+/* start of the header */
+
+.header{
+    padding: 20px;
+    background-color: var(--main-color);
+    height: 100%;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+}
+.header .container .logo{
+    width: 100px;
+}
+
+.header .land{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.header .land .intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header .land .intro .intro_text{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    top: 30%;
+    color: var(--second-color);
+    margin-left: 20px;
+}
+.header .land .intro .intro_text form input{
+    color: var(--main-color);
+    padding: 10px;
+    border: none;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.header .land .header_img img{
+    height: 250px;
+    width: 250px;
+    display: block;
+    box-shadow: 0px 22px 14px -3px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.04));
+    border-radius: 80px;
+}
+.header .land .header_img{
+    flex: 1;
+    margin-left: 75px;
+}
+.header .land .intro .intro_text p{
+    width: 350px;
+    line-height: 1.8;
+    color: var(--second-color);
+    margin-top: -30px;
+}
+.header .land .intro .intro_text h3{
+    font-weight: 800;
+    color: var(--second-color);
+    font-size: 40px;
+} 
+/* end of landing pic */
